@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+
+
+{% block content %}
+<h1>{{ls.name}}</h1>
+{% for item in ls.item_set.all %}
+<ul>
+  <li>{{item.text}}</li>
+</ul>
+
+{% endfor%}
+
+
+{% endblock %}
